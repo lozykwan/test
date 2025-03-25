@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄鐘應用</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>番茄鐘</h1>
+        
+        <div class="timer-display" id="display">25:00</div>
+        
+        <div class="controls">
+            <div class="time-set">
+                <label for="minutes">設置時間 (分鐘):</label>
+                <input type="number" id="minutes" min="1" max="120" value="25">
+            </div>
+            
+            <div class="buttons">
+                <button id="startBtn">開始</button>
+                <button id="pauseBtn" disabled>暫停</button>
+                <button id="stopBtn" disabled>停止</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
